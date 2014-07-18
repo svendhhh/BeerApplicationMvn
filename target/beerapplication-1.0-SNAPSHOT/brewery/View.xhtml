@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!--
+
+    Copyright (c) 2013 Oracle and/or its affiliates. All rights reserved.
+
+    You may not modify, use, reproduce, or distribute this software except in
+    compliance with  the terms of the License at:
+    http://java.net/projects/javaeetutorial/pages/BerkeleyLicense
+
+-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="#{bundle.ViewBreweryTitle}"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: #d20005" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h:panelGrid columns="2">
+                    <h:outputText value="#{bundle.ViewBreweryLabel_id}"/>
+                    <h:outputText value="#{breweryController.selected.id}" title="#{bundle.ViewBreweryTitle_id}"/>
+                    <h:outputText value="#{bundle.ViewBreweryLabel_name}"/>
+                    <h:outputText value="#{breweryController.selected.name}" title="#{bundle.ViewBreweryTitle_name}"/>
+                </h:panelGrid>
+                <br />
+                <h:commandLink action="#{breweryController.destroyAndView}" value="#{bundle.ViewBreweryDestroyLink}"/>
+                <br />
+                <br />
+                <h:commandLink action="Edit" value="#{bundle.ViewBreweryEditLink}"/>
+                <br />
+                <h:commandLink action="#{breweryController.prepareCreate}" value="#{bundle.ViewBreweryCreateLink}" />
+                <br />
+                <h:commandLink action="#{breweryController.prepareList}" value="#{bundle.ViewBreweryShowAllLink}"/>
+                <br />
+                <br />
+                <h:commandLink value="#{bundle.ViewBreweryIndexLink}" action="/index" immediate="true" />
+
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

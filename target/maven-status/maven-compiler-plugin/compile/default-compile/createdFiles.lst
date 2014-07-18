@@ -1,0 +1,13 @@
+com\sentenceman\beer\beerapplication\web\util\PaginationHelper.class
+com\sentenceman\beer\beerapplication\web\BeerController$1.class
+com\sentenceman\beer\beerapplication\web\BeerController$ContactControllerConverter.class
+com\sentenceman\beer\beerapplication\web\BeerController.class
+com\sentenceman\beer\beerapplication\web\BreweryController$ContactControllerConverter.class
+com\sentenceman\beer\beerapplication\ejb\BreweryFacade.class
+com\sentenceman\beer\beerapplication\entities\Brewery.class
+com\sentenceman\beer\beerapplication\web\util\JsfUtil.class
+com\sentenceman\beer\beerapplication\ejb\AbstractFacade.class
+com\sentenceman\beer\beerapplication\ejb\BeerFacade.class
+com\sentenceman\beer\beerapplication\web\BreweryController.class
+com\sentenceman\beer\beerapplication\entities\Beer.class
+com\sentenceman\beer\beerapplication\web\BreweryController$1.class
