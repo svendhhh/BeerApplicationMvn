@@ -27,7 +27,7 @@ public class Beer implements Serializable {
     private Long id;
 
     @NotNull
-    @Pattern(regexp = "[a-zA-Z0-9'-' ']+", message = "Beer name can only contain \"a-zA-Z0-9'-\"")
+    @Pattern(regexp = "[a-zA-Z0-9'-' ']+", message = "Beer name can only contain \"a-zA-Z0-9'- \"")
     private String name;
 
     @ManyToOne
